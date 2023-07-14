@@ -9,8 +9,6 @@ services:
       - relational_db
       - vector_db
       - search_engine
-    # ports:
-    #   - "8080:8080"
     restart: always
     env_file:
       - .env
@@ -46,8 +44,6 @@ services:
       dockerfile: Dockerfile
     depends_on:
       - api_server
-    # ports:
-    #   - "3000:3000"
     restart: always
     env_file:
       - .env
